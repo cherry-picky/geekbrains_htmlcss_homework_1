@@ -7,19 +7,21 @@
 </head>
 <body>
 
-  <p>ПОДОКОННИК</p>
-
-  <ul class='main-menu'>
-    <li><a href='index.html'>Главная</a></li>
-    <li><a href='catalog.html'>Каталог</a></li>
-    <li><a href='contacts.html'>Контакты</a></li>
-  </ul>
+  <div class='header'>
+    <img class='logo' src='images/logo.png' alt='logo'>
+    <p class='shop-name'>ПОДОКОННИК</p>
+    <ul class='main-menu'>
+      <li><a href='index.html'>Главная</a></li>
+      <li><a href='catalog.html'>Каталог</a></li>
+      <li><a href='contacts.html'>Контакты</a></li>
+    </ul>
+  </div>
 
   <hr>
 
   <h1>Контакты</h1>
 
-  <fieldset>
+  <fieldset class='contacts-form'>
     <legend>Напишите нам</legend>
       <form action = 'feedback.php' method='post'>
       <input type='text' name='username' placeholder='Введите ваше имя'>
@@ -27,9 +29,9 @@
       <input type='text' name='email' placeholder='Введите ваш электронный адрес'>
       <br>
       <input type='text' name='subject' placeholder='Тема сообщения'>
-      <br>
+      <br><br>
 
-      <label for ='letter-body'>Суть вашего письма:</label><br>
+      <label for='letter-body'>Суть вашего письма:</label><br>
       <textarea name='message' id='letter-bodye'></textarea><br>
       
       <input type='submit' value="Отправить">
@@ -50,7 +52,9 @@
 
   <hr>
 
-  <p>&copy; "Все права защищены"</p>
+  <div class='footer'>
+    <p>&copy; "Все права защищены"</p>
+  </div>
 
 </body>
 </html>
