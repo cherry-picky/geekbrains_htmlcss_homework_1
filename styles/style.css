@@ -1,24 +1,50 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
 
 body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #f8f8f8;
   font-family: 'Montserrat', sans-serif;
 }
-.logo {
-  width: 80px;
-  float: left;
-  padding-left: 20px;
+
+.container {
+  width: 960px;
+  margin: 0 auto;
 }
 
-.shop-name {
+.header {
+  height: 100px;
+  position: relative;
+}
+
+.header img {
+  width: 80px;
+  margin: 10px 0 0 20px;
+}
+
+.store-name {
+  position: absolute;
+  top: 35px;
+  left: 120px;
   font-size: 30px;
   font-weight: bold;
-  padding-left: 110px;
-  padding-top: 25px;
 }
 
 .main-menu {
+  float: right;
   list-style-type: none;
+  margin-right: 15px;
+  margin-top: 70px;
+}
+
+.main-menu li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.main-menu li:last-child {
+  padding-right: 0;
 }
 
 .main-menu li a {
@@ -33,18 +59,65 @@ body {
   font-weight: bold;
 }
 
-.catalog-image {
-  width: 200px;
-  border: 1px solid #000000;
+.catalog-item-wrap {
+  width: 100%;
+  float: left;
+}
+
+.catalog-item {
+  width: 30%;
+  float: left;
+  margin-right: 1.1%;
+  margin-bottom: 35px;
+  outline: 1px solid #cccccc;
+  padding: 10px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-item-name {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.catalog-item-image {
+  border: 1px solid #cccccc;
+}
+
+.catalog-item-image img {
+  width: 100%;
+  height: 350px;
+}
+
+.catalog-item-price {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.catalog-item-more {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  color: #4d4d4d;
+  background-color: #eaeaea;
+  border-radius: 2px;
 }
 
 .catalog-item a {
+  text-decoration: none;
   color: #4d4d4d;
-  font-size: 20px;
-  font-weight: bold;
 }
 
-.catalog-item p:first-letter {
+.catalog-item-more:hover {
+  background-color: #cccccc;
+}
+
+.catalog-item-description:first-letter {
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     color: red;
@@ -55,29 +128,72 @@ body {
   font-size: 18px;
   font-weight: 400;
   background: #eaeaea;
+  width: 100%;
 }
 
 .product-image {
     width: 150px;
-    border: 1px solid #000000;
+    border: 1px solid #cccccc;
 }
 
 .product-image:hover {
   border-color: transparent;
 }
 
-.product-short-description {
-  color: #707070;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 16px;
+.product-image-and-description {
+  width: 100%;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.product-short-description-header {
+  margin-top: 0;
+}
+
+.product-short-description-wrap {
+  margin-left: 168px;
+}
+
+.product-features-header {
+  clear: both;
+}
+
+.product-image-wrap {
+  width: 16%;
+  margin-right: 2%;
+  float: left;
+}
+
+.product-buy-button {
+  display: block;
+  float: right;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: bold;
+  background-color: #eaeaea;
+}
+
+.product-buy-button:hover {
+  background-color: #cccccc;
+}
+
+.product-buy-button:active {
+  background-color: darkgrey;
 }
 
 .product-full-description {
-  color: #484343;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.product-short-description:first-letter,
+.product-full-description:first-letter {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: red;
 }
 
 .product-features {
@@ -95,18 +211,17 @@ body {
   font-weight: bold;
 }
 
-.contacts-form input[type="text"],
-.contacts-form input[type="email"],
+.contacts-form input[type='text'],
 .contacts-form textarea {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Montserrat', sans-serif;
 }
 
-.contacts-form input[type="text"],
-.contacts-form input[type="email"] {
+.contacts-form input[type='text'] {
   width: 300px;
   height: 25px;
+  margin-bottom: 5px;
 }
 
 .contacts-form textarea {
@@ -120,3 +235,13 @@ body {
 
 input[name='email']:focus {
     background-color: #eaeaea;
+}
+
+.footer {
+    height: 100px;
+    text-align: right;
+    padding: 10px 10px 0 0;
+    box-sizing: border-box;
+    clear: both;
+}
+
