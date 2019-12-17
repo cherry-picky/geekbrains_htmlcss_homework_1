@@ -210,7 +210,7 @@ body {
 
 .contacts-form input[type='text'],
 .contacts-form textarea {
-  color: #ffffff;
+  color: #333333;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -226,19 +226,15 @@ body {
   height: 120px;
 }
 
-.contacts-form form input {
-    text-transform: capitalize;
-}
-
 input[name='email']:focus {
-    background-color: #eaeaea;
+  background-color: #eaeaea;
 }
 
 .footer {
-    height: 100px;
-    text-align: right;
-    padding: 10px 10px 0 0;
-    box-sizing: border-box;
-    clear: both;
+  height: 100px;
+  text-align: right;
+  padding: 10px 10px 0 0;
+  box-sizing: border-box;
+  clear: both;
 }
 
