@@ -230,6 +230,10 @@ input[name='email']:focus {
   background-color: #eaeaea;
 }
 
+.form_error {
+  color: red;
+}
+
 .footer {
   height: 100px;
   text-align: right;
